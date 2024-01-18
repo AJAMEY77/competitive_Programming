@@ -1,3 +1,48 @@
+
+import java.util.*;
+
+public class bit
+{
+     public static void main(String []args)
+     {
+          int n, X=0;
+          char[] ch = new char[3];
+		  String str;
+          
+          Scanner sc =new Scanner(System.in);
+          n = sc.nextInt();
+		  sc.nextLine();
+          
+          for(int i=0;i<n;i++)
+          {
+               str = sc.nextLine();
+			   for(int j=0;j<3;j++)
+			   {
+				   ch[j]=str.charAt(j);
+			   }
+               
+               if(ch[1]=='+')
+               {
+                    X++;
+               }
+               else
+               {
+                    X--;
+               }
+          }
+          System.out.println(X);
+     }
+}
+
+
+
+
+
+
+
+
+
+/*
 import java.util.*;
 
 public class bit
@@ -15,28 +60,17 @@ public class bit
 		{
 			String str=sc.nextLine();
 			
-			for(int j=0;j<3;j++)
-			{
-				arr[j]=str.charAt(j);
-			}
-			for(int j=0;j<3;j++)
-			{
-				System.out.println(arr[i]);
-			}
-			/*
-			if((arr[0]=="+" && arr[1]=="+") || (arr[1]=="+" && arr[2]=="+"))
+			if(str=="x++" || str=="++x" || str=="X++" || str=="++X")
 			{
 				X++;
 			}
-			else if((arr[0]=="-" && arr[1]=="-") || (arr[1]=="-" && arr[2]=="-"))
+			else if(str=="x--" || str=="--x" || str=="X--" || str=="--X")
 			{
 				X--;
-			}*/
+			}
 		}
-		
-		
-		
 		System.out.println(X);
 		
 	}
 }
+*/
